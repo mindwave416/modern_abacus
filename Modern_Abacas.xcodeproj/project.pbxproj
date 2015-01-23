@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08436A3B1A7210D700389B69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08436A3A1A7210D700389B69 /* AppDelegate.swift */; };
+		08436A3D1A7210D700389B69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08436A3C1A7210D700389B69 /* ViewController.swift */; };
+		08436A401A7210D700389B69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08436A3E1A7210D700389B69 /* Main.storyboard */; };
+		08436A421A7210D700389B69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08436A411A7210D700389B69 /* Images.xcassets */; };
+		08436A451A7210D700389B69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08436A431A7210D700389B69 /* LaunchScreen.xib */; };
+		08436A511A7210D700389B69 /* Modern_AbacasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08436A501A7210D700389B69 /* Modern_AbacasTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08436A4B1A7210D700389B69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08436A2D1A7210D700389B69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08436A341A7210D700389B69;
+			remoteInfo = Modern_Abacas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08436A351A7210D700389B69 /* Modern_Abacas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modern_Abacas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08436A391A7210D700389B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08436A3A1A7210D700389B69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08436A3C1A7210D700389B69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08436A3F1A7210D700389B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08436A411A7210D700389B69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		08436A441A7210D700389B69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		08436A4A1A7210D700389B69 /* Modern_AbacasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Modern_AbacasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08436A4F1A7210D700389B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08436A501A7210D700389B69 /* Modern_AbacasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modern_AbacasTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08436A321A7210D700389B69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08436A471A7210D700389B69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08436A2C1A7210D700389B69 = {
+			isa = PBXGroup;
+			children = (
+				08436A371A7210D700389B69 /* Modern_Abacas */,
+				08436A4D1A7210D700389B69 /* Modern_AbacasTests */,
+				08436A361A7210D700389B69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08436A361A7210D700389B69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08436A351A7210D700389B69 /* Modern_Abacas.app */,
+				08436A4A1A7210D700389B69 /* Modern_AbacasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08436A371A7210D700389B69 /* Modern_Abacas */ = {
+			isa = PBXGroup;
+			children = (
+				08436A3A1A7210D700389B69 /* AppDelegate.swift */,
+				08436A3C1A7210D700389B69 /* ViewController.swift */,
+				08436A3E1A7210D700389B69 /* Main.storyboard */,
+				08436A411A7210D700389B69 /* Images.xcassets */,
+				08436A431A7210D700389B69 /* LaunchScreen.xib */,
+				08436A381A7210D700389B69 /* Supporting Files */,
+			);
+			path = Modern_Abacas;
+			sourceTree = "<group>";
+		};
+		08436A381A7210D700389B69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08436A391A7210D700389B69 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08436A4D1A7210D700389B69 /* Modern_AbacasTests */ = {
+			isa = PBXGroup;
+			children = (
+				08436A501A7210D700389B69 /* Modern_AbacasTests.swift */,
+				08436A4E1A7210D700389B69 /* Supporting Files */,
+			);
+			path = Modern_AbacasTests;
+			sourceTree = "<group>";
+		};
+		08436A4E1A7210D700389B69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08436A4F1A7210D700389B69 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08436A341A7210D700389B69 /* Modern_Abacas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08436A541A7210D700389B69 /* Build configuration list for PBXNativeTarget "Modern_Abacas" */;
+			buildPhases = (
+				08436A311A7210D700389B69 /* Sources */,
+				08436A321A7210D700389B69 /* Frameworks */,
+				08436A331A7210D700389B69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Modern_Abacas;
+			productName = Modern_Abacas;
+			productReference = 08436A351A7210D700389B69 /* Modern_Abacas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08436A491A7210D700389B69 /* Modern_AbacasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08436A571A7210D700389B69 /* Build configuration list for PBXNativeTarget "Modern_AbacasTests" */;
+			buildPhases = (
+				08436A461A7210D700389B69 /* Sources */,
+				08436A471A7210D700389B69 /* Frameworks */,
+				08436A481A7210D700389B69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08436A4C1A7210D700389B69 /* PBXTargetDependency */,
+			);
+			name = Modern_AbacasTests;
+			productName = Modern_AbacasTests;
+			productReference = 08436A4A1A7210D700389B69 /* Modern_AbacasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08436A2D1A7210D700389B69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = 0806564;
+				TargetAttributes = {
+					08436A341A7210D700389B69 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					08436A491A7210D700389B69 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 08436A341A7210D700389B69;
+					};
+				};
+			};
+			buildConfigurationList = 08436A301A7210D700389B69 /* Build configuration list for PBXProject "Modern_Abacas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08436A2C1A7210D700389B69;
+			productRefGroup = 08436A361A7210D700389B69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08436A341A7210D700389B69 /* Modern_Abacas */,
+				08436A491A7210D700389B69 /* Modern_AbacasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08436A331A7210D700389B69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08436A401A7210D700389B69 /* Main.storyboard in Resources */,
+				08436A451A7210D700389B69 /* LaunchScreen.xib in Resources */,
+				08436A421A7210D700389B69 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08436A481A7210D700389B69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08436A311A7210D700389B69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08436A3D1A7210D700389B69 /* ViewController.swift in Sources */,
+				08436A3B1A7210D700389B69 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08436A461A7210D700389B69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08436A511A7210D700389B69 /* Modern_AbacasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08436A4C1A7210D700389B69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08436A341A7210D700389B69 /* Modern_Abacas */;
+			targetProxy = 08436A4B1A7210D700389B69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08436A3E1A7210D700389B69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08436A3F1A7210D700389B69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08436A431A7210D700389B69 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08436A441A7210D700389B69 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08436A521A7210D700389B69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08436A531A7210D700389B69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08436A551A7210D700389B69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Modern_Abacas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08436A561A7210D700389B69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Modern_Abacas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08436A581A7210D700389B69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Modern_AbacasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Modern_Abacas.app/Modern_Abacas";
+			};
+			name = Debug;
+		};
+		08436A591A7210D700389B69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Modern_AbacasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Modern_Abacas.app/Modern_Abacas";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08436A301A7210D700389B69 /* Build configuration list for PBXProject "Modern_Abacas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08436A521A7210D700389B69 /* Debug */,
+				08436A531A7210D700389B69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08436A541A7210D700389B69 /* Build configuration list for PBXNativeTarget "Modern_Abacas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08436A551A7210D700389B69 /* Debug */,
+				08436A561A7210D700389B69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08436A571A7210D700389B69 /* Build configuration list for PBXNativeTarget "Modern_AbacasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08436A581A7210D700389B69 /* Debug */,
+				08436A591A7210D700389B69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08436A2D1A7210D700389B69 /* Project object */;
+}
