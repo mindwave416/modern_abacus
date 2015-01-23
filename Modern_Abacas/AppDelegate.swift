@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Modern_Abacas
+//  slider
 //
-//  Created by Benjamin Naugle on 1/22/15.
+//  Created by Benjamin Naugle on 1/14/15.
 //  Copyright (c) 2015 0806564. All rights reserved.
 //
 
@@ -10,37 +10,115 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    var _background: UIColor?
+    var _ycurrent: UITextField?
+    var _xcurrent: UITextField?
+    var _multiply: UITextField?
+    var _add: UITextField?
+    var _slider_1: UISlider?
+    var _slider_2: UISlider?
+    var _xnumber: Float = 0.0
+    var _ynumber: Float = 0.0
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        _background = UIColor(white: 80, alpha: 1)
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.backgroundColor = _background
+        window?.makeKeyAndVisible()
+        
+        _slider_1 = UISlider(frame: CGRect(x: UIScreen.mainScreen().bounds.height/16,
+            y: UIScreen.mainScreen().bounds.height/2,
+            width: (UIScreen.mainScreen().bounds.width - UIScreen.mainScreen().bounds.height/6),
+            height: 25))
+        
+       // _slider_1?.value = 0
+        
+        window?.addSubview(_slider_1!)
+        
+        _slider_1?.addTarget(self, action: "slider_changed_1", forControlEvents: UIControlEvents.TouchDragInside)
+        
+        _slider_2 = UISlider(frame: CGRect(x: UIScreen.mainScreen().bounds.height/16,
+            y: (UIScreen.mainScreen().bounds.height/2 - 50),
+            width: (UIScreen.mainScreen().bounds.width - UIScreen.mainScreen().bounds.height/6),
+            height: 25))
+        //_slider_2?.value = 0.0
+        window?.addSubview(_slider_2!)
+        _slider_2?.addTarget(self, action: "slider_changed_2", forControlEvents: UIControlEvents.TouchDragInside)
+        
+        
+        var y_label = UILabel(frame: CGRectMake(UIScreen.mainScreen().bounds.height/64,
+            UIScreen.mainScreen().bounds.height/2,
+            UIScreen.mainScreen().bounds.height/25, 25))
+        y_label.backgroundColor = _background
+        y_label.text = "Y"
+        window?.addSubview(y_label)
+        
+        
+        var x_label = UITextField(frame: CGRectMake(UIScreen.mainScreen().bounds.height/64,
+            (UIScreen.mainScreen().bounds.height/2 - 50),
+            UIScreen.mainScreen().bounds.height/25, 25))
+        x_label.backgroundColor = _background
+        x_label.text = "X"
+        window?.addSubview(x_label)
+        
+        _ycurrent = UITextField(frame: CGRectMake(UIScreen.mainScreen().bounds.width - UIScreen.mainScreen().bounds.width/7,
+            UIScreen.mainScreen().bounds.height/2,
+            UIScreen.mainScreen().bounds.height/4, 25))
+        _ycurrent?.backgroundColor = _background
+        window?.addSubview(_ycurrent!)
+        
+        _xcurrent = UITextField(frame: CGRectMake(UIScreen.mainScreen().bounds.width - UIScreen.mainScreen().bounds.width/7,
+            (UIScreen.mainScreen().bounds.height/2 - 50),
+            UIScreen.mainScreen().bounds.height/4, 25))
+        _xcurrent?.backgroundColor = _background
+        window?.addSubview(_xcurrent!)
+        
+        _multiply = UITextField(frame: CGRectMake(UIScreen.mainScreen().bounds.width/4,
+            (UIScreen.mainScreen().bounds.height/2 + 100),
+            UIScreen.mainScreen().bounds.height/4, 25))
+        _multiply!.text = "X * Y = "
+        window?.addSubview(_multiply!)
+        
+        _add = UITextField(frame: CGRectMake(UIScreen.mainScreen().bounds.width/4,
+            (UIScreen.mainScreen().bounds.height/2 + 50),
+            UIScreen.mainScreen().bounds.height/4, 25))
+        _add!.text = "X + Y = "
+        window?.addSubview(_add!)
+        
+        
         return true
     }
+    
+    func slider_changed_1()
+    {
+         _ynumber = _slider_1!.value
+         _ycurrent!.text = String(format: "%.3f", _ynumber)
 
-    func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+        var text = String(format: "%.3f", multiply())
+        _multiply!.text = "X * Y = " + "\(text)"
+         text = String(format: "%.3f", add())
+        _add!.text = "X + Y = " + "\(text)"
     }
-
-    func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    func slider_changed_2()
+    {
+        _xnumber = _slider_2!.value
+        _xcurrent!.text = String(format: "%.3f", _xnumber)
+        
+        var text = String(format: "%.3f", multiply())
+        _multiply!.text = "X * Y = "  + "\(text)"
+        text = String(format: "%.3f", add())
+        _add!.text = "X + Y = " + "\(text)"
+        
     }
-
-    func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    func multiply() -> Float
+    {
+        return _ynumber * _xnumber
     }
-
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    func add() -> Float
+    {
+        return _ynumber + _xnumber
     }
-
-    func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
 }
-
